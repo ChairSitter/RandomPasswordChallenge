@@ -59,7 +59,7 @@ const generatePassword = () => {
       alert("Please select at least one bank of characters!");
     };
   };
-  alert("Thank you, your password will now be randomly generated. Good luck remembering it.")
+  alert("Thanks, your password will now be randomly generated.")
 
   //create character banks, add characters to a shared bank based on user selections
   let availableCharacters = [];
