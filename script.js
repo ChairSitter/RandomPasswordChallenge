@@ -15,7 +15,7 @@ const generatePassword = () => {
     };
   };
 
-  //prompt user for chosen banks
+  //prompt user for chosen banks, make sure at least one bank is chosen
   let isLowercase = false;
   let isUppercase = false;
   let isNumeric = false;
@@ -61,6 +61,7 @@ const generatePassword = () => {
   };
   alert("Thank you, your password will now be randomly generated. Good luck remembering it.")
 
+  //create character banks, add characters to a shared bank based on user selections
   let availableCharacters = [];
   const lowercaseBank = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
 "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -81,6 +82,10 @@ const generatePassword = () => {
   if(isSpecial){
     availableCharacters.push(...specialBank);
   }
+
+  /*Create a password based on chosen length and random selection from 
+  available characters bank. Return password to function call in 
+  writePassword() function*/
 
   let newPassword = "";
   let chooseRandomCharacter;
