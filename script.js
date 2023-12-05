@@ -6,7 +6,7 @@ const generatePassword = () => {
   //prompt user for length, make sure it's within range
   let lengthIsOk = false;
   let passwordLength = 0;
-  while (lengthIsOk === false) {
+  while (!lengthIsOk) {
     passwordLength = prompt("Please type a password length from 8-128 characters");
     if (passwordLength >= 8 && passwordLength <= 128) {
       lengthIsOk = true;
