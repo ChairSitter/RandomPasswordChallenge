@@ -26,34 +26,26 @@ const generatePassword = () => {
     if (confirm("Would you like to include lowercase letters?")) {
       isLowercase = true;
       hasBank = true;
-      alert("Selection confirmed: random password may include lowercase letters.");
     } else {
         isLowercase = false
-        alert("Selection confirmed: random password will not include lowercase letters.");
     };
     if (confirm("Would you like to include uppercase letters?")) {
       isUppercase = true;
       hasBank = true;
-      alert("Selection confirmed: random password may include uppercase letters.");
     } else {
         isUppercase = false
-        alert("Selection confirmed: random password will not include uppercase letters.");
     };
     if (confirm("Would you like to include numbers 0-9?")) {
       isNumeric = true;
       hasBank = true;
-      alert("Selection confirmed: random password may include numbers 0-9.");
     } else {
         isNumeric = false
-        alert("Selection confirmed: random password will not include numbers 0-9.");
       };
     if (confirm("Would you like to include special characters?")) {
       isSpecial = true;
       hasBank = true;
-      alert("Selection confirmed: random password may include special characters.");
     } else {
         isSpecial = false
-        alert("Selection confirmed: random password will not include special characters.");
       };
     if(!hasBank){
       alert("Please select at least one bank of characters!");
